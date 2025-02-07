@@ -465,6 +465,7 @@ body {
     justify-content: space-between; 
     width: 15%; 
     align-items: center;
+    cursor: pointer;
 }
 
 .social_icon img {
