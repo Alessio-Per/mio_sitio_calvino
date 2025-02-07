@@ -1,0 +1,516 @@
+body {
+    font-size: 16px;
+    min-width: 150px; 
+    margin: 3vw 0 0 0; 
+    padding: 0;
+    overflow-x: hidden; 
+    width: 100%;
+    height: 100vh; 
+    box-sizing: border-box; 
+}
+
+
+/* Navbar Section */
+
+.navbar_container {
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    padding: 1% 2%; 
+    width: 100%; 
+    transition: all 0.3s ease; 
+    min-width: 300px; 
+    gap: 3%;
+
+/* Fissa la barra di navigazione in alto */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    background-color: #fff; 
+    box-shadow: 0 4px 2px -2px gray; 
+}
+
+.navbar_container img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.logo_navbar {
+    cursor: pointer;
+    width: 30px; 
+    height: auto
+}
+
+/* Media Query per schermi più piccoli */
+
+@media (max-width:430px) {
+    .navbar_container {
+        flex-direction: flex; 
+        justify-content: flex-start; 
+        align-items: center; 
+    }
+
+    .navbar_container img {
+        max-width: 90%; 
+        height: auto; 
+    }
+
+    .logo_navbar {
+        width: 30px; 
+        height: auto; 
+    }
+}
+
+
+/* Italo Calvino Section */
+
+.info_copertina {
+  margin: 0 auto; 
+  padding: 0; 
+  min-width: 300px; 
+  position: relative; 
+}
+
+.image_copertina img {
+    width: 100%;      
+    height: auto;     
+    height: auto;      
+    display: block;    
+    object-fit: cover;
+}
+
+
+/* Contenitore di testo sull'immagine */
+
+.overlay {
+    position: absolute; 
+    top: 65%; 
+    left: 5%; 
+    transform: translateY(-50%); 
+    color: white; 
+    padding: 20px;
+    width: auto; 
+    box-sizing: border-box;
+}
+
+
+/* Titolo  */
+
+.titulo_imagen {
+    font-family: 'Mohave', sans-serif;
+    font-weight: 700; 
+    font-size: 6vw; 
+    margin: 0; 
+    padding: 1vw 2vw; 
+    background-color: #FE8205; 
+    color: white; 
+    border-radius: 5px; 
+    display: inline-block; 
+}
+
+/* Sottotitolo  */
+
+.subtitulo_imagen {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 2.5vw; 
+    font-family: 'Helvetica', sans-serif;
+    margin-top: 10px; 
+    margin-bottom: 2%;
+    padding-left: 0; 
+    color: white; 
+    background: none; 
+}
+
+
+/* Media Queries per schermi più piccoli */
+
+@media (max-width: 768px) {
+
+    .titulo_imagen {
+      font-size: 6vw; 
+      padding: 1vw 2vw; 
+    }
+  
+    .subtitulo_imagen {
+      font-size: 2.5vw; 
+      margin-top: 10px; 
+    }
+  
+    .overlay {
+      top: 65%;
+      left: 5%; 
+    }
+  }
+  
+  /* Media Query per schermi più piccoli */
+
+  @media (max-width: 480px) {
+
+    .titulo_imagen {
+      font-size: 6vw;        
+      padding: 1vw 2vw;   
+    }
+  
+    .subtitulo_imagen {
+      font-size: 2.5vw;
+    }
+  
+    .overlay {
+      top: 65%; 
+      left: 5%; 
+    }
+  }
+
+
+/* Copertine rinnovate Section */
+
+.info_contenitore {
+    display: grid;
+    grid-template-columns: 1fr 1fr;         
+    gap: 20px;                             
+    align-items: center;                  
+    width: 100%;                           
+    padding: 2%;                          
+    box-sizing: border-box;
+}
+
+.contenitore_texto {
+    width: 100%;                           
+    max-width: 100%;                       
+    margin: 0 auto;                      
+    padding: 0 10%;                         
+    height: auto;                          
+    box-sizing: border-box;                 
+}
+
+.title_1 {
+    font-family: 'Mohave', sans-serif;      
+    font-weight: 700;                      
+    font-size: 4rem;                       
+    margin-bottom: 10px;                   
+    padding: 10px 20px;                    
+    background-color: #003B49;            
+    color: white;                         
+    display: inline-block;                   
+    border-radius: 5px;                     
+    box-sizing: border-box;                
+    width: auto                       
+}
+
+.contenitore_texto p {
+    font-family: 'Helvetica', sans-serif;      
+    font-size: 1rem;                           
+    margin-bottom: 20px;                        
+    line-height: 1.5;                           
+}
+
+.image_section_1 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;                 
+    padding: 0;                                
+    box-sizing: border-box;
+}
+
+.image_section_1 img {
+    max-width: 100%;                           
+    height: auto;                           
+    object-fit: contain;                 
+    display: block;
+    box-sizing: border-box;                 
+}
+
+/* Media Query per schermi più piccoli */
+
+@media (max-width: 768px) {
+    .info_contenitore {
+        grid-template-columns: 1fr; 
+    }
+
+    .conteritore_texto {
+        padding: 0 10%; 
+    }
+
+    .image_section_1 img {
+        max-width: 100%; 
+        object-fit: contain; 
+    }
+
+    .title_1 {
+        font-size: 6vw; 
+        padding: 5px 10px;
+        width: fit-content; 
+    }
+
+    .conteritore_texto p {
+        font-size: 0.5rem; 
+    }
+}
+
+
+
+/* Come è stato realizzato il progetto? Section */
+
+.separator_section {
+    display: flex;               
+    justify-content: center;     
+    align-items: center;         
+    height: 200px;               
+    margin: 50px 0;              
+}
+
+.separator_text {
+    font-family: 'Mohave', sans-serif;    
+    font-weight: 700;                     
+    font-size: 3rem;                   
+    color: #fff;                         
+    text-align: center;                  
+    line-height: 1.5;                     
+    padding: 10px 20px;                  
+    background-color: #CD42BE;            
+    width: 100%;                        
+    box-sizing: border-box;              
+}
+
+/* Media Query per schermi più piccoli */
+
+@media (max-width: 768px) {
+    .separator_text {
+        font-size: 1.2rem;                 
+        padding: 10px 15px;               
+    }
+}
+
+
+
+/* Jack Smyth */
+
+.info_contenitore_reverse {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
+    align-items: center; 
+    width: 100%; 
+    padding: 2%; 
+    flex-direction: row-reverse; 
+    box-sizing: border-box;
+}
+
+.contenitore_texto_reverse {
+    width: 100%; 
+    max-width: 100%; 
+    padding: 0 10%; 
+    text-align: right; 
+    height: auto; 
+    overflow: visible; 
+    box-sizing: border-box; 
+}
+
+.title_1_reverse {
+    font-size: 4rem; 
+    margin-bottom: 10px; 
+    font-family: 'Mohave', sans-serif;  
+    font-weight: bold; 
+    background-color: #00A2E2; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    display: inline-block; 
+}
+
+.contenitore_texto_reverse p {
+    font-family: 'Helvetica', sans-serif; 
+    font-size: 1rem; 
+    margin-bottom: 20px; 
+    line-height: 1.5; 
+}
+
+.image_section_reverse img {
+    max-width: 100%; 
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    padding: 0; 
+    display: block; 
+    box-sizing: border-box; 
+}
+
+/* Media Query per schermi più piccoli */
+
+@media (max-width: 768px) {
+    .info_contenitore_reverse {
+        grid-template-columns: 1fr; 
+        padding: 2%; 
+    }
+
+    .image_section_reverse img {
+        max-width: 100%; 
+        object-fit: contain; 
+    }
+
+    .contenitore_texto_reverse {
+        padding: 0 10%; 
+    }
+
+    .title_1_reverse {
+        font-size: 1.5rem; 
+    }
+
+    .contenitore_texto_reverse p {
+        font-size: 0.9rem; 
+    }
+}
+
+
+
+/* Ultimo blocco */
+
+.info_contenitore_last {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    align-items: center; 
+    padding: 3%; 
+    text-align: center; 
+    width: 100%;
+}
+
+.contenitore_texto_last {
+    width: 100%; 
+    max-width: 100%; 
+    margin: 0 auto; 
+    text-align: left; 
+    padding: 0 3.8%; 
+    box-sizing: border-box;
+    overflow: visible; 
+}
+
+.last_title {
+    font-family: 'Mohave', sans-serif; 
+    font-weight: 700; 
+    font-size: 4rem; 
+    margin-bottom: 2%;
+    padding: 10px 20px;
+    background-color: #003B49; 
+    color: white; 
+    display: inline-block; 
+    border-radius: 5px; 
+    max-width: 100%; 
+}
+
+.last_text {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-top: 2%;
+    color: #333; 
+    padding: 0 20%; 
+    overflow: visible; 
+}
+
+.image_section_last {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    padding: 0; 
+}
+
+.image_section_last img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    display: block;
+}
+
+/* Media Query per schermi più piccoli */
+
+@media (max-width: 768px) {
+    .last_title {
+        font-size: 1.5rem; 
+    margin: 0 0 5% 0;
+    }
+
+    .last_text {
+        font-size: 0.9rem; 
+    }
+
+    .contenitore_texto_last {
+        padding: 0 10%; 
+    }
+
+    .image_section_last img {
+        object-fit: contain; 
+    }
+}
+
+
+
+/* Footer Section */
+
+.footer {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 1% 6%; 
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #817E7E; 
+    color: rgb(0, 0, 0); 
+}
+
+.social_icons {
+    display: flex; 
+    justify-content: space-between; 
+    width: 15%; 
+    align-items: center;
+}
+
+.social_icon img {
+    width: 40px; 
+    height: auto;
+    margin-right: 10px; 
+    object-fit: contain; 
+}
+
+.footer_text {
+    font-family: 'Mohave', sans-serif; 
+    font-weight: 700; 
+    width: 100%; 
+    max-width: 800px; 
+    padding: 0 0.5%; 
+    text-align: right; 
+    font-size: 2rem;
+}
+
+/* Media Query per schermi più piccoli */
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; 
+        text-align: center; 
+        align-items: center; 
+        justify-content: center; 
+        height: auto; 
+    }
+
+    .social_icons {
+        width: 100%; 
+        justify-content: center; 
+        margin-top: 20px;
+    }
+
+    .social_icon img {
+        width: 30px; 
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .footer_text {
+        padding: 0 5%; 
+        font-size: 1rem; 
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
